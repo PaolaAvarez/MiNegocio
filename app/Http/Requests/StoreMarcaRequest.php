@@ -25,7 +25,7 @@ class StoreMarcaRequest extends FormRequest
     {
         return [
             'nombre'=>'required|string|max:50', 
-            'descripcion'=>'nullable|string|max:250',
+            'descripcion'=>'required|string|max:250',
         ];
     }
     public function messages()

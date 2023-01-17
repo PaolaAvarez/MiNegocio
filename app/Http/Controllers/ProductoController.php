@@ -18,8 +18,8 @@ class ProductoController extends Controller
     
     public function create()
     {
-        $marcas = Marca::get();
-        return view('admin.producto.create', compact('marcas'));
+        $productos = Producto::get();
+        return view('admin.producto.create', compact('producto'));
     }
 
     
@@ -38,7 +38,7 @@ class ProductoController extends Controller
     
     public function edit(Producto $producto)
     {
-        $marcas = Marca::get();
+        $productos = Producto::get();
         return view('admin.producto.show', compact('producto','marcas'));
     }
 

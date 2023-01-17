@@ -18,8 +18,7 @@ class GastoController extends Controller
     
     public function create()
     {
-        $users = User::get();
-        return view('admin.gasto.create', compact('users'));
+        return view('admin.gasto.create');
     }
 
     
@@ -38,8 +37,7 @@ class GastoController extends Controller
     
     public function edit(Gasto $gasto)
     {
-        $users = User::get();
-        return view('admin.gasto.show', compact('gasto','users'));
+        return view('admin.gasto.show', compact('gasto'));
     }
 
     
